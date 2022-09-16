@@ -1,0 +1,20 @@
+{
+	"basic-cpp": {
+		"prefix": "Basic-cpp",
+		"body": [
+		  "#include <iostream>",
+		  "#include <cmath>",
+		  "#include <bits/stdc++.h>",
+		  "using namespace std;",
+		  "    ",
+		  "",
+		  "",
+		  "int main() {",
+		  "",
+		  "    int arr[]={};",
+		  "",
+		  "    return -1;",
+		  "}"
+		],
+		"description": "basic-cpp"
+	  }
