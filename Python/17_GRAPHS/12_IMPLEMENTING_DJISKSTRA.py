@@ -1,7 +1,6 @@
 # Shortest distance from a souce to destination using Dijkastra algorithm
 # Source should be zero and we have a weighted graph 
 import heapq
-
 # Here we are using a priority queue which has to be a minimum heap
 # in the priority queue we will be storing [node, dist]
 

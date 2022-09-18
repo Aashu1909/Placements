@@ -9,7 +9,6 @@ def shortest_path(adjList,source):
     distance[source]=0
     queue.append(source)
     visited[source]=True
-
     while len(queue)>0:
         u=queue.popleft()
         for adj in adjList[u]:

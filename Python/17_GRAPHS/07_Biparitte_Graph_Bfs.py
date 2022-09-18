@@ -5,7 +5,6 @@
 # with som extra check such that checking the color of the parent node and the adj node must not be same 
 # for the given node
 # we are taking Two colors as 0,1
-
 from collections import deque
 def bfsCheck(adj,sourceNode,color):
     queue=deque()

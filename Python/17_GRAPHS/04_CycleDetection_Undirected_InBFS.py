@@ -3,16 +3,16 @@ from collections import deque
 def checkForCycle(self,source,adj,visited):
     queue=deque()
     visited[source]=True
-                    # parent
+                      # parent
     queue.append([source,-1])
-    
     while len(queue)>0:
         node,parent=queue.popleft()
         for adjNode in adj[node]:
             if visited[adjNode]==False:
                 visited[adjNode]=True
                 queue.append((adjNode,node))
-            elif parent!=node:
+            #visited[adjNode]==True SomeOne has visited the adjNode before 
+            elif parent!=adjNode:
                 return True
     return False
 
