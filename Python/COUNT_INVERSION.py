@@ -27,7 +27,7 @@ class Solution:
                 i+=1
             else:
                 arr[k]=right[j]
-                inv+=1
+                inv+=(len(left)-i)
                 j=j+1
                 k=k+1
                 

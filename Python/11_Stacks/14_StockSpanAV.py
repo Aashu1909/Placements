@@ -2,6 +2,7 @@
 # and storing the pair which consist the element and its corresponding index
 # (nearestGreterToLeft,INDEX)
 
+# The problem is till how many consecutive days the stock price is greater than its left arr
 def stock_span(arr):
     n=len(arr)
     stack=[(-1,0)]
@@ -22,5 +23,6 @@ def stock_span(arr):
     return result
 
 arr=[100,80,60,70,60,75,85]
+# [0, 1, 1, 2, 1, 4, 6]
 print(arr)
 print(stock_span(arr))

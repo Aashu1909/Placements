@@ -1,6 +1,3 @@
-from re import L
-
-
 def nearest_smaller_left(arr):
     n=len(arr)
     index_arr=[]
@@ -58,15 +55,15 @@ def max_area_bin_matrix(matrix):
     for j in range(m):
         first_row[j]=matrix[0][j]
     mx_area=maximum_area_histogram(first_row)
-    print(mx_area)
-    print(first_row)
+    # print(mx_area)
+    # print(first_row)
     for i in range(1,n):
         for j in range(m):
             if matrix[i][j]==0:
                 first_row[j]=0
             else:
                 first_row[j]+=matrix[i][j]
-        print(first_row)
+        # print(first_row)
         mx_area=max(mx_area,maximum_area_histogram(first_row))
     
     return mx_area

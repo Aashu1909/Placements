@@ -8,13 +8,17 @@
  
 def tower_of_hanoi(N,A,B,C):
     if N==1:
+        # cnt+=1
         print('Move '+str(N)+' from '+ A +' to '+ C)
         return
     tower_of_hanoi(N-1,A,C,B)
     print('Move '+str(N)+' from '+A+' to '+ C)
+    # cnt+=1
     tower_of_hanoi(N-1,B,A,C)
 
 start="A"
 aux="B"
 end="C"
+cnt=0
 tower_of_hanoi(4,start,aux,end)
+# print(cnt)

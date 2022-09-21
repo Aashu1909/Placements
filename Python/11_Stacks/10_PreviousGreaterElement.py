@@ -1,22 +1,22 @@
 # Here we are given an array we have to find Prev greater element 
 # for each element for the input array
 
-def prev_greater_element_naive(arr):
+def left_greater_element_naive(arr):
     n=len(arr)
-    prev_greater=[]
+    left_greater=[]
     for i in range(n):
         has_greater=False
         for j in range(i-1,-1,-1):
             if arr[j]>arr[i]:
                 has_greater=True
-                prev_greater.append(arr[j])
+                left_greater.append(arr[j])
                 break
         if has_greater==False:
-            prev_greater.append(-1)
-    return prev_greater
+            left_greater.append(-1)
+    return left_greater
 
 # Efficient solution based on stock span problem
-def prev_greater_element(arr):
+def left_greater_element(arr):
     stack=[]
     n=len(arr)
     ans=[-1]
@@ -32,8 +32,8 @@ def prev_greater_element(arr):
         stack.append(arr[i])
     return ans
     
-
 arr=[20,30,10,5,15]
+# OP[-1,-1,30,10,30]
 print(arr)
-print(prev_greater_element_naive(arr))
-print('Efficient',prev_greater_element(arr))
+print(left_greater_element_naive(arr))
+print('Efficient',left_greater_element(arr))

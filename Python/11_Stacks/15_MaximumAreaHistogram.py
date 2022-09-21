@@ -51,7 +51,11 @@ def maximum_area_histogram(arr):
 
 
 arr=[6,3,5,4,5,2,6]
-print(arr)
-print(nearest_smaller_left(arr))
-print(nearest_smaller_right(arr))
+# width [1, 5, 1, 3, 1, 7, 1]
+# area [6, 15, 5, 12, 5, 14, 6]
+#ans 15
+
+# print(arr)
+# print(nearest_smaller_left(arr))
+# print(nearest_smaller_right(arr))
 print(maximum_area_histogram(arr))

@@ -1,10 +1,10 @@
 # def bellman_ford(adj,V):
+# adj->list[list:int[u,v,cost]]
 def isNegativeWeightCycle(self, v, adj):
     #Code here
     dist=[100000000]*v
     dist[0]=0
-    
-    for i in range(1,v):
+    for _ in range(1,v):
         for j in adj:
             u=j[0]
             v=j[1]

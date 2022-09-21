@@ -2,10 +2,7 @@
 # we need to find number of susets which equal to the given sum
 # [10,5,2,3,6] k=8
 # op 2 [5,3] [2,6]
-
-
 # Here in the recursion tree we will have 2 options either take the index or pass the index (untake) the index
-
 # Also we can reduce the number of recursion call by adding the if statement
 # And if the comdition are met
 

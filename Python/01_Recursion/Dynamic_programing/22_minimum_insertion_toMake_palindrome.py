@@ -1,5 +1,4 @@
 # The idea is behind this
-
 class Solution:
     def lcs(self,index1,index2,str1,str2,dp):
         if index1<0 or index2<0:

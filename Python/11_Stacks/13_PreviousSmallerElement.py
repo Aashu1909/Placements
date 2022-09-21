@@ -18,5 +18,6 @@ def previous_smaller(arr):
     return ans
     
 arr=[2,6,4,7,3]
+# op [-1, 2, 2, 4, 2]
 print(arr)
 print(previous_smaller(arr))

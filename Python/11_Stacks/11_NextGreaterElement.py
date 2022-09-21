@@ -14,5 +14,7 @@ def next_greater(arr):
     return ans
 
 arr=[1,3,2,4]
+# [1, 3, 2, 4]
+#OP [3, 4, 4, -1]
 print(arr)
 print(next_greater(arr))

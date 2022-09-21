@@ -13,7 +13,7 @@
 #   peek-return the last element in the stack
 from math import inf
 
-from numpy import size
+# from numpy import size
 class Node:
     def __init__(self,data):
         self.data=data
