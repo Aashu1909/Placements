@@ -4,7 +4,7 @@ def minPathSum( grid):
     return countMin(n-1,m-1,grid,dp)
 
 # Memoiation
-def countMin(self,i,j,grid,dp):
+def countMin(i,j,grid,dp):
     if i==0 and j==0:
         return grid[i][j]
     

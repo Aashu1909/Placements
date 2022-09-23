@@ -1,5 +1,5 @@
 # there are 3 number of thing that a ninja does which gives a points
-# each day a ninja does something ,Ninja doesnt perform the same thing on two consecutive days
+# each day a ninja does something ,Ninja cannot perform the same task for Two consecutive days
 # find the maximum points that a ninja can achieve
 # array=[[1,2,3],[10,2,12],[5,21,3],[5,15,23]]
 

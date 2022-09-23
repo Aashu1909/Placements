@@ -37,7 +37,7 @@ def distinct_subsequence(s,t):
     return  solve(n-1,m-1)
 
 # Tabulization
-def distinct_subsequence(s,t):
+def distinct_subsequence1(s,t):
     n,m=len(s),len(t)
     dp=[[0 for _ in range(m)] for _ in range(n)]
     for i in range(n+1):

@@ -35,13 +35,13 @@ def nearest_smaller_right(arr):
     return index_arr
 
 def maximum_area_histogram(arr):
-    left_smaller_index_arr=nearest_smaller_left(arr)
-    right_smaller_index_arr=nearest_smaller_right(arr)
+    nsl=nearest_smaller_left(arr)
+    nsr=nearest_smaller_right(arr)
 
     n=len(arr)
     width_arr=[0]*n
     for i in range(n):
-        width_arr[i]=right_smaller_index_arr[i]-left_smaller_index_arr[i]-1
+        width_arr[i]=(nsr[i]-nsl[i])-1#-1 because of the 
     area_arr=[0]*n
     for i in range(n):
         area_arr[i]=width_arr[i]*arr[i]
