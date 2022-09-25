@@ -15,7 +15,7 @@ class Solution:
             return dp[index1][index2]
         #No matching character
         dp[index1][index2]=max(self.lcs(index1-1,index2,str1,str2,dp),
-                               self.lcs(index1,index2-1,str1,str2,dp) )
+                               self.lcs(index1,index2-1,str1,str2,dp))
         return dp[index1][index2]
     
     def bottomUp(self,s):

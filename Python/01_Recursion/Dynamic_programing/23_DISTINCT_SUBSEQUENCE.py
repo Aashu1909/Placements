@@ -29,7 +29,9 @@ def distinct_subsequence(s,t):
             return dp[i][j]
         if s[i]==t[j]:
             # We have 2 choice either to take or pass the matched letter of subsequence
-            dp[i][j]= solve(i-1,j-1)+solve(i-1,j)
+            take=solve(i-1,j-1)
+            notTake=solve(i-1,j)
+            dp[i][j]= take+notTake
             return dp[i][j]
         #else 
         dp[i][j]= solve(i-1,j)
