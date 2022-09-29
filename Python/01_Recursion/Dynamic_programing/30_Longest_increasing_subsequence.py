@@ -48,7 +48,7 @@ class Solution:
                 subseq.pop()
             solve(index+1,prev_index,subseq)
         solve(0,-1,[])
-        return ans
+        return len(ans)
 
 
 nums = [10,9,2,5,3,7,101,18]

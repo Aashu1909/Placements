@@ -9,6 +9,6 @@ def check_palindrome(s):
         high-=1
     return True
 
-print(check_palindrome("geek"))
+print(check_palindrome("acca"))
 
     

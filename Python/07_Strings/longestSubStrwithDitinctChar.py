@@ -15,12 +15,13 @@ def longestDistinct(str1):
     n=len(str1)
     result=0
     for i in range(n):
-        for j in range(n):
+        for j in range(i+1,n):
             if areDistinct(str1,i,j):
-                result=max(result,i-j+1)
+                print(i,j)
+                result=max(result,j-i+1)
     return result
 
-# Better Solution
+# Better Solution O(N^2)
 def beterLongestDistinct(str1):
     n=len(str1)
     result=0
@@ -49,14 +50,12 @@ def efficientLongestDistinct(str1):
         prev[ord(str[j])-ord('a')]=j
     return result
 
-
 # Leetcode solution 
-def lengthOfLongestSubstring(self, s: str) -> int:
+def lengthOfLongestSubstring(s: str) -> int:
     n=len(s)
     charSet=set()
     ans=0
     left=0
-    
     for right in range(n):
         while s[right] in charSet:
             charSet.remove(s[left])
@@ -65,8 +64,9 @@ def lengthOfLongestSubstring(self, s: str) -> int:
         ans=max(ans,right-left+1)        
     return ans
     
-test_case=[0]
-print(solution(test_case))
+test_case="abac"
+print(lengthOfLongestSubstring(test_case))
+# print(longestDistinct(test_case))
 
 
 

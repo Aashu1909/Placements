@@ -31,14 +31,3 @@ print(printFirstNegativeInteger(test_case))
 
 
 
-
-
-
-
-
-
-
-
-time.sleep(1)
-end=time.time()
-print(f"Total Time Taken:{end-begin}")

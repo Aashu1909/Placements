@@ -20,6 +20,13 @@ def print_linked_list(head):
         curr_ele=curr_ele.next
     print()
     
+
+def recursive_print(head):
+    if head==None:
+        return 
+    recursive_print(head.next)
+    print(head.data,end=" ")
+
 head=None
 head=insert_at_begining(head,10)
 head=insert_at_begining(head,20)
@@ -27,3 +34,4 @@ head=insert_at_begining(head,30)
 head=insert_at_begining(head,40)
 head=insert_at_begining(head,50)
 print_linked_list(head)
+recursive_print(head)

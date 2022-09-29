@@ -6,6 +6,7 @@ class node:
     def __init__(self,data):
         self.data=data
         self.next=None
+        
 def insert_at_end(head,data):
     if head is None:
         return node(data)

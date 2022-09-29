@@ -13,13 +13,14 @@ def searchAnagram(txt,pat):
     n,m=len(txt),len(pat)
     if m>n:
         return False
+    # Initializr Count arr of txt and Pat
     countTxt=[0]*256
     countPat=[0]*256
-
+    # Fill the pattern array and initiales if TXT till m
     for i in range(m):
-        countTxt[ord(pat[i])-ord('a')]+=1
+        countTxt[ord(txt[i])-ord('a')]+=1
         countPat[ord(pat[i])-ord('a')]+=1
-
+    # if They are same return true else slide the window
     for i in range(m,n):
         if areSame(countTxt,countPat):
             return True

@@ -17,14 +17,7 @@ def insertAtBeg(head,element):
     temp.data,head.data=head.data,temp.data
     return head
 
-def deleteFromBeg(head):
-    if head==None:
-        return None
-    if head.next==head:
-        return None
-    head.data=head.next.data
-    head.next=head.next.next
-    return head
+
 
 def print_circular_linked_list(head):
     if head==None:

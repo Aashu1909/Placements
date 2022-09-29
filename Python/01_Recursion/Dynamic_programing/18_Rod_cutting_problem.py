@@ -18,7 +18,7 @@ class Solution:
         dp[index][target]= max(notTake,take)
         return dp[index][target]
     
-    def topDown(self,price,N):
+    def bottom_up(self,price,N):
         dp=[[0 for _ in range(N+1)]for _ in range(N)]
         
         for i in range(N):
