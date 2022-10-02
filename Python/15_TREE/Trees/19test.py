@@ -1,4 +1,4 @@
-from tree import Node
+from a_TREE import Node
 def inorder(root,r,sm):
     if root==None and r<=0:
         return 

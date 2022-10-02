@@ -8,7 +8,7 @@ def stock_span(arr):
     stack=[(-1,0)]
     index_arr=[]
     for i in range(n):
-        while stack and stack[-1][0]<arr[i]:
+        while stack and stack[-1][0]<=arr[i]:
             stack.pop()
         if stack:
             index_arr.append(stack[-1])

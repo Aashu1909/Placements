@@ -1,6 +1,6 @@
 # Here we are first storing the root of the tree in arr in Inorder form
 # Inorder traversal using Stack
-from tree import Node
+from 0_TREE import Node
 # Inorder Traversal in Binary tree
 # Left Root Right   20 10 40 30 50
 #    10 

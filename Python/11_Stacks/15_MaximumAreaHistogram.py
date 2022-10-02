@@ -37,7 +37,6 @@ def nearest_smaller_right(arr):
 def maximum_area_histogram(arr):
     nsl=nearest_smaller_left(arr)
     nsr=nearest_smaller_right(arr)
-
     n=len(arr)
     width_arr=[0]*n
     for i in range(n):

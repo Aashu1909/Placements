@@ -22,7 +22,7 @@ def print_span(arr):
         while stack and arr[stack[-1]]<=arr[i]:
             stack.pop()
         span= i+1 if len(stack)==0 else i-stack[-1]
-        span_list.apped(span)
+        span_list.append(span)
         stack.append(i)
     return span_list
     
