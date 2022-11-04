@@ -64,10 +64,10 @@ class MinHeap:
     '''
     Steps for heapify down
     1 intialise index=0
-    2 check if index has left child or not beacuse we fill a binary heap from left to right so its important to check for its 
-        completeness
+    2 check if index has left child or not beacuse we fill a binary heap from left to right so its 
+    important to check for its completeness
     3 start a while loop till index has a left child 
-    4 within a while initilise a smaller_child_index as left child index of root index
+    4 within a while initialize a smaller_child_index as left child index of root index
     5 if left child index is greater than right child index
         change the smaller child index to right child index of the root
     6 if arr[index] is lesser than the smaller child index break from the loop 

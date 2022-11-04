@@ -1,0 +1,1 @@
+inorder.index(preorder[index])

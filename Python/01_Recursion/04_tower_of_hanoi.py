@@ -16,6 +16,17 @@ def tower_of_hanoi(N,A,B,C):
     # cnt+=1
     tower_of_hanoi(N-1,B,A,C)
 
+def toh(self, N, fromm, to, aux):
+        # Your code here
+        if N==1:
+            print('move disk {} from rod {} to rod {}'.format(N,fromm,to))
+            return 1
+        n1=N-1
+        a=self.toh(n1,fromm,aux,to)
+        print('move disk {} from rod {} to rod {}'.format(N,fromm,to))
+        b=self.toh(n1,aux,to,fromm)
+        return a+b+1
+
 start="A"
 aux="B"
 end="C"

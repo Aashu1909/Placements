@@ -6,16 +6,22 @@ class MaxHeap:
 
     def left_child(self,index):
         return (2*index+1)
+    
     def right_child(self,index):
         return (2*index+2)
+    
     def parent(self,index):
         return (index-1)//2
+    
     def has_left_child(self,index):
         return self.left_child(index) < self.size
+    
     def has_right_child(self,index):
         return self.right_child(index)<self.size
+    
     def has_parent(self,index):
         return self.parent(index)>=0
+    
     def is_full(self):
         return self.size==self.capacity
 

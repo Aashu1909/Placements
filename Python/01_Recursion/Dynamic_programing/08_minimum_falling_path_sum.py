@@ -16,6 +16,7 @@ def solve(self,i,j,mat,dp):
     left_diagonal=mat[i][j]+self.solve(i-1,j-1,mat,dp)
     right_diagonal=mat[i][j]+self.solve(i-1,j+1,mat,dp)
     return min(up,left_diagonal,right_diagonal)
+
 # Tabulization
 def minFallingPathSum(self, matrix) -> int:
     n,m=len(matrix),len(matrix[0])

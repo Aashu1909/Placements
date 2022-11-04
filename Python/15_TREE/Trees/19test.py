@@ -1,26 +1,21 @@
-from a_TREE import Node
-def inorder(root,r,sm):
-    if root==None and r<=0:
+from this import d
+
+
+class Node:
+    def __init__(self,d) -> None:
+        self.data=d
+        self.left=self.right=None
+
+def solve(root):
+    if root==None:
         return 
-    if root.left:
-        inorder(root.left,r-1,sm)
-    sm+=(root.key)
-    print(sm,r)
-    # r-=1
-    if root.right:
-        inorder(root.right,r-1,sm)
+    print(root.data)
+    solve(root.right)
+    solve(root.right)
 
-def summ(root, k):
-    # code here
-    r=k
-    sm=0
-    inorder(root,r,sm)
-    print(sm)
-    # return sum(ans)
-
-root = Node(20)
-root.left = Node(10)
-root.right = Node(40)
-root.right.left = Node(30)
-root.right.right = Node(50)
-print(summ(root,3))
+root = Node(3)
+root.left = Node(4)
+root.right = Node(5)
+# root.right.left = Node(30)
+root.right.right = Node(6)
+print(solve(root))

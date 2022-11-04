@@ -14,6 +14,7 @@ def maxPoint(day,lastTask,points,dp):
     #Any other day
     if (day,lastTask) in dp:
         return dp[(day,lastTask)]
+        
     maxx=0
     for task in range(3):
         if task!=lastTask:
@@ -21,6 +22,26 @@ def maxPoint(day,lastTask,points,dp):
             maxx=max(maxx,point)
     dp[(day,lastTask)]=maxx
     return maxx
+
+# 0->n
+def maxPoint2(day,lastTask,points,dp):
+    if day==len(points)-1:
+        maxx=0
+        for task in range(3):
+            if task!=lastTask:
+                maxx=max(maxx,points[day][task])
+        return maxx
+    #Any other day
+    if (day,lastTask) in dp:
+        return dp[(day,lastTask)]
+    maxx=0
+    for task in range(3):
+        if task!=lastTask:
+            point=points[day][task]+maxPoint2(day+1,task,points,dp)
+            maxx=max(maxx,point)
+            
+    dp[(day,lastTask)]=maxx
+    return maxx 
 
 # Tabulazation-Bottom up dp Tn O(N*4*3) S O(n*4)
 def maxPoint1(points):
@@ -49,7 +70,9 @@ def main():
     nums=[[1,2,3],[10,2,12],[5,21,3],[5,15,23]]
     n=len(nums)
     dp={}
-    print(maxPoint(n-1,3,nums,dp))
-    print(maxPoint1(nums))
+    # print(maxPoint(n-1,3,nums,dp))
+    dp2={}
+    print(maxPoint2(0,-1,nums,dp2))
+    # print(maxPoint1(nums))
 
 main()

@@ -31,11 +31,6 @@ def subsetSum(arr,n,k):
             dp[index][target]=(notTake or take)
     return dp[n-1][target]
                 
-
-
-
-
-
 arr=[3, 34, 4, 12, 5, 2]
 sm=9
 print(subsetSumToK(len(arr),arr,sm))

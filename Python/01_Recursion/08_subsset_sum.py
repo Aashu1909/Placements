@@ -11,15 +11,10 @@ def sum_subset(subset_arr,arr,subset_sum,index,k):
         if subset_sum==k:
             print(subset_arr)
         return 
-    if index>len(arr):
-        return 
-    #Taking the index 
     subset_sum+=arr[index]
     subset_arr.append(arr[index])
-    sum_subset(subset_arr,arr,subset_sum,index+1,k)
-    # Pass the index so we have to remove and then call the function 
+    sum_subset(subset_arr,arr,subset_sum,index+1,k
     subset_sum-=arr[index]
-    # as the element we remove had been added at last only so we can use the POP method 
     subset_arr.pop()
     sum_subset(subset_arr,arr,subset_sum,index+1,k)
 

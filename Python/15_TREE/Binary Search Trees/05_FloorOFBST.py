@@ -6,8 +6,7 @@ class Node:
 
 def floorOfBST(root,x):
     res = None
-    while root != None:
-        
+    while root != None:    
         if root.key == x:
             return root
         elif root.key>x:
@@ -34,7 +33,6 @@ def iterativeInsertBst(root,key):
         parent.left=Node(key)
     else:
         parent.right=Node(key)
-    
     return root
 
 def InOrder(root):

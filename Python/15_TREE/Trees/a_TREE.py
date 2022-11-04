@@ -25,9 +25,9 @@ def inorder(root):
 
 def buildTree(root):
     data=int(input("Enter then Data:"))
-    root=TreeNode(data)
     if data==-1:
         return None
+    root=TreeNode(data)
     print(f"Enter data to the left of {data}")
     root.left=buildTree(root.left)
     print(f"Enter data to the right of {data}")

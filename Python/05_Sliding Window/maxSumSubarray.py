@@ -8,6 +8,7 @@ def maxSumSubarray(arr,k):
     for i in range(k):
         window_sum+=arr[i]
     max_sum=window_sum
+   
     for j in range(k,n):
         window_sum+=arr[j]-arr[j-k]
         max_sum=max(max_sum,window_sum)
@@ -15,8 +16,6 @@ def maxSumSubarray(arr,k):
 
 test_case=[100, 200, 300, 400]
 print(maxSumSubarray(test_case,2))
-
-
 
 
 
