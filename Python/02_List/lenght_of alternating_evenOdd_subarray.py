@@ -1,7 +1,6 @@
 # arr=[10,12,14,7,8] op3 [14,7,8]
 # arr=[5,10,20,6,3,8] op3 [6,3,8]
 # Naive solution Time Complexity O(n^2)
-from unittest import result
 
 
 def max_even_odd(arr):
@@ -21,7 +20,7 @@ def max_even_odd(arr):
 def max_even_odd_efficient(arr):
     result=1
     curr=1
-    for i in range(0,len(arr)):
+    for i in range(1,len(arr)):
         if (arr[i]%2==0 and arr[i-1]%2!=0) or (arr[i]%2!=0 and arr[i-1]%2==0):
             curr+=1
             result=max(result,curr)

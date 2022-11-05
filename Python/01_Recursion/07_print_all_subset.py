@@ -1,5 +1,4 @@
 temp=[]
-
 def get_all_subset(index,curr,s):
     if len(s)==index:
         if curr:

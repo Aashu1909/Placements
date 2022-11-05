@@ -15,7 +15,7 @@ def max_difference_efficient(arr):
     maximum_difference=arr[1]-arr[0]
     for i in range(len(arr)):
         maximum_difference=max(maximum_difference,(arr[i]-minValue))
-        minValue-min(minValue,arr[i])
+        minValue=min(minValue,arr[i])
     return maximum_difference
 
 

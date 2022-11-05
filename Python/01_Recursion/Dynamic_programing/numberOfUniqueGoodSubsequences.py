@@ -1,7 +1,6 @@
 def numberOfUniqueGoodSubsequences( binary: str) -> int:
     n=len(binary)
     hashmap={}
-    
     def solve(index,subseq,arr):
         if index==n:
             s="".join(subseq[:])
@@ -18,5 +17,5 @@ def numberOfUniqueGoodSubsequences( binary: str) -> int:
         notTake=solve(index+1,subseq,arr)
         return take+notTake
     return solve(0,[],list(binary))
-s="111001101100000001001110110101110001100"
+s="111001100"
 print(numberOfUniqueGoodSubsequences(s))

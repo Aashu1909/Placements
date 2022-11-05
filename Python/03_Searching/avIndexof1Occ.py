@@ -3,9 +3,8 @@ def indexOfFirstOccurence(arr,element):
     high=len(arr)-1
     res=-1
     while (low<=high):
-        print('low-high',low,"-",high)
         mid=(high+low)//2
-        print("arr mid",mid,":",arr[mid])
+ 
         if arr[mid]==element:
             res=mid
             high=mid-1

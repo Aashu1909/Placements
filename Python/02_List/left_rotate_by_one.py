@@ -1,9 +1,9 @@
 def left_rotate_one(l):
     temp=l[0]
-    list_lenght=len(l)-1
-    for i in range(list_lenght):
+    n=len(l)
+    for i in range(n-1):
         l[i]=l[i+1]
-    l[list_lenght]=temp
+    l[n-1]=temp
     return l
 
 # Direct Method 

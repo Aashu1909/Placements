@@ -20,14 +20,12 @@ def numberOfTimesSortedArrIsrotated(arr):
         nextt=(mid+1)%n
         prev=(mid+n-1)%n    
         if arr[mid]<=arr[prev] and arr[mid]<=arr[nextt]:
-            print('ans')
             return arr[mid]
         elif  arr[start]<=arr[mid]:
-            print('start<mid')
             start=mid+1
         elif arr[mid]>=arr[end]:
-            print('mid>end')
             end=mid-1
+    print(0)
     return res
 
 test_case=[15, 18, 2, 3, 6, 12]
