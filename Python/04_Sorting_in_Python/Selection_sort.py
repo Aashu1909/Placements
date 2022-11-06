@@ -7,7 +7,7 @@ begin=time.time()
 #Selection sort is not a stable sortin g algorithm ie order of same element may not remain the same
 # O(N^2) and o(1)
 def selection_sort(arr):
-    for i in range(len(arr)-1):
+    for i in range(0,len(arr)-1):
         min_index=i
         for j in range(i+1,len(arr)):
             if (arr[min_index]>arr[j]):

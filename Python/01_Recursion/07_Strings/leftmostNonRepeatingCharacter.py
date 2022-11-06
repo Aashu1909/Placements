@@ -25,6 +25,7 @@ def nonRepeatingCharacter(s):
     n=len(s)
     for i in range(n):
         charCount[ord(s[i])]+=1
+        
     for i in range(n):
         if charCount[ord(s[i])]==1:
             return s[i]

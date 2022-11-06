@@ -14,7 +14,6 @@ def inserion_sort(arr):
             arr[j+1]=arr[j]
             j=j-1
         arr[j+1]=curr_element
-
     return arr
 
 test_case=[20,5,40,60,10,30]

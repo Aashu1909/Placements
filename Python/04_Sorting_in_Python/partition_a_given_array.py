@@ -27,8 +27,6 @@ print(partition(test_case,6))
 
 
 
-
-
 time.sleep(1)
 end=time.time()
 print(f"Total Time Taken:{end-begin}")

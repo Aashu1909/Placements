@@ -15,7 +15,6 @@ def numberOfTimesSortedArrIsrotated(arr):
     while start<=end:
         if arr[start]<=arr[end]:
             return arr[start]
-
         mid=start+(end-start)//2
         nextt=(mid+1)%n
         prev=(mid+n-1)%n    
