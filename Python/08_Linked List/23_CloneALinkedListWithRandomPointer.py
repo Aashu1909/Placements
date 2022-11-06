@@ -10,7 +10,6 @@ class node:
 def randomClone(head):
     hashmap={None:None}
     curr=head
-    
     while curr!=None:
         copyNode=node(curr.val)
         hashmap[curr]=copyNode

@@ -4,7 +4,6 @@ def MergeLinkedList(a,b):
         return b
     if b==None:
         return a
-    
     head=None
     tail=None
     if a.val<=b.val:

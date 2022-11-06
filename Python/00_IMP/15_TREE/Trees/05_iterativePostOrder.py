@@ -8,7 +8,6 @@ ans = []
 
 
 class Node:
-
     # Constructor to create a new node
     def __init__(self, data):
         self.data = data
@@ -22,7 +21,6 @@ def peek(stack):
     return None
 # A iterative function to do postorder traversal of
 # a given binary tree
-
 
 def postOrderIterative(root):
     if root==None:
@@ -40,6 +38,7 @@ def postOrderIterative(root):
     while len(stack2)!=0:
         postOrder.append(stack2.pop().data)
     return postOrder
+
 # Driver program to test above function
 root = Node(1)
 root.left = Node(2)

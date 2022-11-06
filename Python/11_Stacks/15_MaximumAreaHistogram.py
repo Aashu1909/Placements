@@ -3,7 +3,6 @@ def nearest_smaller_left(arr):
     n=len(arr)
     stack=[]
     index_arr=[-1]
-    psuedo_index=-1
     for i in range(1,n):
         while stack and stack[-1][0]>arr[i]:
             stack.pop()
@@ -11,7 +10,7 @@ def nearest_smaller_left(arr):
             index_arr.append(stack[-1][1])
         else:
             # No Nearest Smaller Left element in arr 
-            index_arr.append(psuedo_index)
+            index_arr.append(-1)
         stack.append((arr[i],i))
     
     return index_arr

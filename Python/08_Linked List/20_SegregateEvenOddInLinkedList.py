@@ -8,11 +8,7 @@ class node:
 # We do similar thing with the odd nodes and at the last we connect the EvenEnd with OddStart
 
 def segregateEvenOdd(head):
-    evenStart=None
-    evenEnd=None
-    oddStart=None
-    oddEnd=None
-
+    evenStart=None;evenEnd=None;oddStart=None;oddEnd=None
     curr=head
     while curr!=None:
         if curr.data%2==0:
@@ -30,12 +26,12 @@ def segregateEvenOdd(head):
                 oddEnd.next=curr
                 oddEnd=oddEnd.next
         curr=curr.next
+    
     # This statment is to capture the Edge case which is All nodes Even Or Odd
     if oddStart==None or evenStart==None:
         return head
     evenEnd.next=oddStart
     oddEnd.next=None
-
     return evenStart
 
 def insert_at_begining(head,data):
