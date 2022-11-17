@@ -50,6 +50,7 @@ def buildFromLevelOrder(root):
             node=TreeNode(leftData)
             temp.left=node
             queue.append(node)
+            
         print(f"Enter data to right {temp.key}:")
         rightData=int(input())
         if rightData!=-1:

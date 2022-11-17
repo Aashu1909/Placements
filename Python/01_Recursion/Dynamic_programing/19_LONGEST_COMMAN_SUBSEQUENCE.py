@@ -13,6 +13,7 @@ class Solution:
         
         if str1[index1]==str2[index2]:
             dp[index1][index2]=1+self.lcs(index1-1,index2-1,str1,str2,dp)
+            self.s+=str1[index1]
             return dp[index1][index2]
         # Not character are not same
         dp[index1][index2]=max(self.lcs(index1-1,index2,str1,str2,dp),self.lcs(index1,index2-1,str1,str2,dp))
@@ -21,6 +22,7 @@ class Solution:
     def longest_comman_subsequence(self,str1,str2):
         n,m=len(str1),len(str2)
         dp=[[-1 for _ in range(m)] for _ in range(n)]
+        self.s=""
         return self.lcs(n-1,m-1,str1,str2,dp)
 
     def topdown(self,str1,str2):
@@ -59,5 +61,6 @@ class Solution:
 obj=Solution()
 str1,str2="abcde","ace"
 print(obj.longest_comman_subsequence(str1,str2))
+print(obj.s)
 # print(obj.topdown(str1,str2))
-print(obj.print_lcs(str1,str2))
+# print(obj.print_lcs(str1,str2))

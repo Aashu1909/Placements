@@ -24,3 +24,4 @@ def minimumSubsetSumDifference(arr,n):
             s2=totalSum-target
             mini=min(mini,abs(s1-s2))
     return mini
+

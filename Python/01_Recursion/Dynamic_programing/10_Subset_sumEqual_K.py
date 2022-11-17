@@ -17,6 +17,7 @@ def solve(index,target,arr)->bool:
         take=solve(index-1,target-arr[index],arr)
     return (take or notTake)
 
+
 def subsetSum(arr,n,k):
     dp=[[False for i in range(k+1)]for i in range(n)]
     for i in range(n):

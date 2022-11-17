@@ -17,6 +17,7 @@ def search_in_linked_list(head,x):
         pos+=1
         curr_ele=curr_ele.next
     return -1
+
 def recursive_search(head,x):
     if head==None:
         return -1 
