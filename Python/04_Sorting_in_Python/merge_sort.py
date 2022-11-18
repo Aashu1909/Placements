@@ -39,13 +39,6 @@ Merge_sort(test_case,left=0,right=len(test_case)-1)
 print(test_case)
 
 
-
-
-
-
-
-
-
 time.sleep(1)
 end=time.time()
 print(f"Total Time Taken:{end-begin}")

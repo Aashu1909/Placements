@@ -6,7 +6,8 @@ begin=time.time()
 # Idea of insertion sort that it maintains |sorted|unsorted| in this region.
 
 def inserion_sort(arr):
-    for i in range(1,len(arr)):
+    n=len(arr)
+    for i in range(1,n):
         curr_element=arr[i]
         j=i-1
         # iterate till arr[i]<arr[j]
